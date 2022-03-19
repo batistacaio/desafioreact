@@ -1,0 +1,15 @@
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+.mainLogo {
+    font-size: 30px;
+    color: #1a75bc;
+    letter-spacing: -0.04em;
+    padding: 10px;
+}
+

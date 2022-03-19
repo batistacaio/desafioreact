@@ -1,14 +1,14 @@
-import { Container, Navbar } from 'react-bootstrap';
+import "../App.css";
 
 function Header() {
   return (
-<Container>
-  <Navbar fixed="top" expand="lg" variant="light" bg="white">
-    <Container>
-      <Navbar.Brand href="/"> <img src='./images/logo' /> </Navbar.Brand>
-    </Container>
-  </Navbar>
-</Container>
+    <header>
+      <div className="logoContainer">
+        <div>
+          <h1 className="mainLogo">doutormultas</h1>
+        </div>
+      </div>
+    </header>
   );
 }
 
