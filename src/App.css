@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     background-color: ghostwhite;
+    margin-bottom: 30px;
 }
 
 .mainLogo {
@@ -12,4 +13,3 @@
     letter-spacing: -0.04em;
     padding: 10px;
 }
-
