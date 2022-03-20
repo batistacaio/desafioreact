@@ -17,13 +17,13 @@ function Modelos() {
     return(
         <>
         <div className="container">
-            <ul>
+            <ul className="list-group list-group-flush">
                 {modelos.modelos?.sort((a, b) => {
                     if(a.nome < b.nome) return 1
                     if(a.nome > b.nome) return -1
                     return 0
                 }).map(modelo => (
-                    <li key={modelo.codigo}>
+                    <li className="list-group-item blockquote text-uppercase" key={modelo.codigo}>
                         <p>{modelo.codigo} - {modelo.nome}</p>
                     </li>
                 ))}

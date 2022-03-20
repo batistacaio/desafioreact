@@ -32,9 +32,9 @@ function Content() {
                 <Accordion.Body>
                     <ul>
                         {marcasCarro.map(marca => (
-                            <li key={marca.codigo}>
+                            <li className="list-inline" key={marca.codigo}>
                                 <button type="button" className="btn btn-outline-primary btn-sm m-1">
-                                    <a className="text-decoration-none" href={`/carros/${marca.codigo}`}>{marca.nome}</a>
+                                    <a className="text-decoration-none text-uppercase" href={`/carros/${marca.codigo}`}>{marca.nome}</a>
                                 </button>
                             </li>
                         ))}
@@ -46,9 +46,9 @@ function Content() {
                 <Accordion.Body>
                     <ul>
                         {marcasMoto.map(marca => (
-                            <li key={marca.codigo}>
+                            <li className="list-inline" key={marca.codigo}>
                                 <button type="button" className="btn btn-outline-primary btn-sm m-1">
-                                    <a className="text-decoration-none" href={`/motos/${marca.codigo}`}>{marca.nome}</a>
+                                    <a className="text-decoration-none text-uppercase" href={`/motos/${marca.codigo}`}>{marca.nome}</a>
                                 </button>
                             </li>
                         ))}
@@ -60,9 +60,9 @@ function Content() {
                 <Accordion.Body>
                     <ul>
                         {marcasCaminhao.map(marca => (
-                            <li key={marca.codigo}>
+                            <li className="list-inline" key={marca.codigo}>
                                 <button type="button" className="btn btn-outline-primary btn-sm m-1">
-                                    <a className="text-decoration-none" href={`/caminhoes/${marca.codigo}`}>{marca.nome}</a>
+                                    <a className="text-decoration-none text-uppercase" href={`/caminhoes/${marca.codigo}`}>{marca.nome}</a>
                                 </button>
                             </li>
                         ))}
