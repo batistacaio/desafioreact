@@ -13,3 +13,11 @@
     letter-spacing: -0.04em;
     padding: 10px;
 }
+
+.backButton {
+    font-size: 20px;
+    color: #1a75bc;
+    letter-spacing: -0.04em;
+    padding: 10px;
+    margin-left: 10px;
+}
