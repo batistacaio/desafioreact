@@ -1,23 +1,29 @@
 import { useState, useEffect } from 'react'
 
 function Modelos() {
-    const [modelo, setModelo] = useState([])
+    function id() {
+        return window.location.pathname.split('/')[2]
+    }
+
+    const [modelos, setModelos] = useState([])
 
     useEffect(() => {
-        fetch("https://parallelum.com.br/fipe/api/v1/carros/marcas/1/modelos")
+        fetch(`https://parallelum.com.br/fipe/api/v1/${window.location.pathname.split('/')[1]}/marcas/${id()}/modelos`)
             .then(res => res.json())
-            .then(data => setModelo(data))
+            .then(data => setModelos(data))
     }, [])
 
-    return (
+    return(
         <ul>
-            {modelo.map(modelo => (
+            <>
+            {modelos.map(modelo => (
                 <li key={modelo.codigo}>
-                    <a href={`/carros/${modelo.codigo}`}>{modelo.nome}</a>
+                    <p>{modelo.codigo} - {modelo.nome}</p>
                 </li>
             ))}
+            </>
         </ul>
     )
 }
 
-export default Modelos;
+export default Modelos
