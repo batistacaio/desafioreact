@@ -33,7 +33,9 @@ function Content() {
                     <ul>
                         {marcasCarro.map(marca => (
                             <li key={marca.codigo}>
-                                <a href={`/carros/${marca.codigo}`}>{marca.nome}</a>
+                                <button type="button" className="btn btn-outline-primary btn-sm m-1">
+                                    <a className="text-decoration-none" href={`/carros/${marca.codigo}`}>{marca.nome}</a>
+                                </button>
                             </li>
                         ))}
                     </ul>
@@ -45,7 +47,9 @@ function Content() {
                     <ul>
                         {marcasMoto.map(marca => (
                             <li key={marca.codigo}>
-                                <a href={`/motos/${marca.codigo}`}>{marca.nome}</a>
+                                <button type="button" className="btn btn-outline-primary btn-sm m-1">
+                                    <a className="text-decoration-none" href={`/motos/${marca.codigo}`}>{marca.nome}</a>
+                                </button>
                             </li>
                         ))}
                     </ul>
@@ -57,7 +61,9 @@ function Content() {
                     <ul>
                         {marcasCaminhao.map(marca => (
                             <li key={marca.codigo}>
-                                <a href={`/caminhoes/${marca.codigo}`}>{marca.nome}</a>
+                                <button type="button" className="btn btn-outline-primary btn-sm m-1">
+                                    <a className="text-decoration-none" href={`/caminhoes/${marca.codigo}`}>{marca.nome}</a>
+                                </button>
                             </li>
                         ))}
                     </ul>

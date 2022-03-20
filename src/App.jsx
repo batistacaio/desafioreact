@@ -17,6 +17,7 @@ export default function App() {
         <Route path="/caminhoes/:id" element={<Modelos />} />
       </Routes>
     </div>
+    <br></br>
   </Router>
   )
 }
