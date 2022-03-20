@@ -18,11 +18,15 @@ function Modelos() {
         <>
         <div className="container">
             <ul>
-                {(modelos.modelos?.map(modelo => (              
+                {modelos.modelos?.sort((a, b) => {
+                    if(a.nome < b.nome) return 1
+                    if(a.nome > b.nome) return -1
+                    return 0
+                }).map(modelo => (
                     <li key={modelo.codigo}>
                         <p>{modelo.codigo} - {modelo.nome}</p>
                     </li>
-                )))}
+                ))}
             </ul>
         </div>
         <button className="btn btn-primary" onClick={() => window.history.back()}>Voltar</button>
