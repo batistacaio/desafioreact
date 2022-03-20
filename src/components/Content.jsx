@@ -30,12 +30,10 @@ function Content() {
             <Accordion.Item eventKey="0">
                 <Accordion.Header>Carros</Accordion.Header>
                 <Accordion.Body>
-                    <ul>
+                    <ul className="list-group">
                         {marcasCarro.map(marca => (
-                            <li className="list-inline" key={marca.codigo}>
-                                <button type="button" className="btn btn-outline-primary btn-sm m-1">
-                                    <a className="text-decoration-none text-uppercase" href={`/carros/${marca.codigo}`}>{marca.nome}</a>
-                                </button>
+                            <li className="list-inline list-group-item" key={marca.codigo}>
+                                <a className="text-decoration-none text-uppercase" href={`/carros/${marca.codigo}`}>{marca.nome}</a>
                             </li>
                         ))}
                     </ul>
@@ -44,12 +42,10 @@ function Content() {
             <Accordion.Item eventKey="1">
                 <Accordion.Header>Motos</Accordion.Header>
                 <Accordion.Body>
-                    <ul>
+                    <ul className="list-group">
                         {marcasMoto.map(marca => (
-                            <li className="list-inline" key={marca.codigo}>
-                                <button type="button" className="btn btn-outline-primary btn-sm m-1">
-                                    <a className="text-decoration-none text-uppercase" href={`/motos/${marca.codigo}`}>{marca.nome}</a>
-                                </button>
+                            <li className="list-inline list-group-item" key={marca.codigo}>
+                                <a className="text-decoration-none text-uppercase" href={`/motos/${marca.codigo}`}>{marca.nome}</a>
                             </li>
                         ))}
                     </ul>
@@ -58,12 +54,10 @@ function Content() {
             <Accordion.Item eventKey="2">
                 <Accordion.Header>Caminhões</Accordion.Header>
                 <Accordion.Body>
-                    <ul>
+                    <ul className="list-group">
                         {marcasCaminhao.map(marca => (
-                            <li className="list-inline" key={marca.codigo}>
-                                <button type="button" className="btn btn-outline-primary btn-sm m-1">
-                                    <a className="text-decoration-none text-uppercase" href={`/caminhoes/${marca.codigo}`}>{marca.nome}</a>
-                                </button>
+                            <li className="list-inline list-group-item" key={marca.codigo}>
+                                <a className="text-decoration-none text-uppercase" href={`/caminhoes/${marca.codigo}`}>{marca.nome}</a>
                             </li>
                         ))}
                     </ul>
