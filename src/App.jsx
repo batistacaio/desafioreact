@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function App() {
   return (
-  <Router basename={window.location.pathname || ''}>
+  <Router>
     <Header />
     <div className="container">
       <Routes>
