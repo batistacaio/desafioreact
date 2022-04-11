@@ -10,8 +10,8 @@ export default function App() {
   <Router>
     <Header />
     <div className="container">
-      <Routes>
-        <Route exact path="/" element={<Content />} />
+      <Routes >
+        <Route path="/" exact element={<Content />} />
         <Route path="/carros/:id" element={<Modelos />} />
         <Route path="/motos/:id" element={<Modelos />} />
         <Route path="/caminhoes/:id" element={<Modelos />} />
