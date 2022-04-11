@@ -11,10 +11,10 @@ export default function App() {
     <Header />
     <div className="container">
       <Routes>
-        <Route path="/{desafioreact}" exact element={<Content />} />
-        <Route path="/carros/:id" element={<Modelos />} />
-        <Route path="/motos/:id" element={<Modelos />} />
-        <Route path="/caminhoes/:id" element={<Modelos />} />
+        <Route exact path="/desafioreact" element={<Content />} />
+        <Route path="/desafioreact/carros/:id" element={<Modelos />} />
+        <Route path="/desafioreact/motos/:id" element={<Modelos />} />
+        <Route path="/desafioreact/caminhoes/:id" element={<Modelos />} />
       </Routes>
     </div>
     <br></br>
