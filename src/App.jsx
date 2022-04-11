@@ -11,7 +11,7 @@ export default function App() {
     <Header />
     <div className="container">
       <Routes>
-        <Route path="/" exact element={<Content />} />
+        <Route path="/{app-name}" exact element={<Content />} />
         <Route path="/carros/:id" element={<Modelos />} />
         <Route path="/motos/:id" element={<Modelos />} />
         <Route path="/caminhoes/:id" element={<Modelos />} />
