@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function App() {
   return (
-  <Router basename="/desafioreact">
+  <Router basename={window.location.pathname || ''}>
     <Header />
     <div className="container">
       <Routes>
