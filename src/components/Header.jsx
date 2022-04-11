@@ -5,7 +5,7 @@ function Header() {
     <header>
       <div className="logoContainer">
         <div>
-          <h1 className="mainLogo">doutormultas</h1>
+          <h1 className="mainLogo">FipeCars</h1>
         </div>
       </div>
     </header>
